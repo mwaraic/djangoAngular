@@ -1,20 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
+import { ApiService, } from './api.service';
 import { AppComponent } from './app.component';
-import { BlogPostService } from './blog_post.service';
-import { UserService } from './user.service';
+import { AppRoutingModule } from './app-routing.module';
+import { AuthGuard, AuthService, AuthInterceptor } from './auth.service';
+import { ListComponent } from './list.component';
+import { LoginComponent } from './login.component';
+import { SignupComponent } from './signup.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
   ],
-  providers: [BlogPostService, UserService],
-  bootstrap: [AppComponent]
+  providers: [
+    ApiService,
+    AuthService,
+    AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true,
+    },
+  ],
+  bootstrap: [
+    AppComponent,
+  ],
 })
 export class AppModule { }
