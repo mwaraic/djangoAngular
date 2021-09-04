@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'corsheaders',
     'shopping',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,6 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'data/') # 'data' is my media folder
+MEDIA_URL = '/media/'
