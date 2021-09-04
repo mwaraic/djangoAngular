@@ -10,7 +10,7 @@ import { AuthService } from './auth.service';
   template: `
   <div style="text-align:center">
     <h1>
-      Login 123
+      Login
     </h1>
   </div>
   
