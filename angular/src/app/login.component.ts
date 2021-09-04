@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -40,4 +38,3 @@ export class LoginComponent implements OnInit {
     );
   }
 }
->>>>>>> 87788a234b72043c3ef2c83ab724b229af6a8622
