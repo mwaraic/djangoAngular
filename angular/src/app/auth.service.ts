@@ -15,6 +15,8 @@ export class AuthService {
 
   private apiRoot = 'http://127.0.0.1:8000/auth/';
   private httpOptions: any;
+
+  
   constructor(private http: HttpClient) {
     this.httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
