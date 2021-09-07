@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
   template: `
   <div style="text-align:center">
     <h1>
-      Cadastrar
+      Signup
     </h1>
   </div>
 
