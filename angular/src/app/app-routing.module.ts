@@ -1,6 +1,6 @@
+import { EditPageComponent } from './edit-page/edit-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EditPageComponent } from './editPage';
 
 import { AuthGuard } from './auth.service';
 import { ListComponent } from './list.component';
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  {path:'Aurangzeb/intro' , component:EditPageComponent},
+  {path:'edit' , component:EditPageComponent},
   {path:'preview' , component:PortfolioPageComponent},
   { path: 'list', component: ListComponent, canActivate: [AuthGuard] },
 ];

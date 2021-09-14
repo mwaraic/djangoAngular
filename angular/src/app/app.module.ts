@@ -1,7 +1,8 @@
+import { EditPageComponent } from './edit-page/edit-page.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { EditPageComponent } from './editPage';
+import { FormsModule } from '@angular/forms';
 import { ApiService, } from './api.service';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +26,7 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [
     ApiService,

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DOCUMENT } from '@angular/common';
 import { navBarData,navBar } from './shopping-item.interface';
-
+import { RouterLink } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Inject } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
@@ -35,16 +37,33 @@ import { navBarData,navBar } from './shopping-item.interface';
           </svg></a>
         </div>
       </div>
+      <button routerLink='./edit'>Edit</button>
     </div>
   </nav>
-    <router-outlet></router-outlet>
-  `
+  <button (click)='printing($event)'>Alert</button>
+  
+    <router-outlet></router-outlet>`
+  
 })
 export class AppComponent implements OnInit {
 navbar:navBar[]=[];
-  constructor() { }
+
+  constructor(@Inject(DOCUMENT)public document:Document) { 
+
+  }
 
   ngOnInit() {
     this.navbar=navBarData;
+    console.log(this.document.location.href)
+  }
+  printing($event){
+    //alert('hello world')
+    alert(this.document.location.href)
+    const loc:string='http://localhost:4200/preview';
+    if(loc===this.document.location.href){
+      alert('preview')
+    }else{
+      alert('edit')
+    }
   }
 }
