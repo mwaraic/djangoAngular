@@ -1,67 +1,61 @@
-<form class="row g-3 needs-validation" novalidate #f="ngForm" (ngSubmit)='getFormValue(f.value)'>
-    <div class="col-md-4">
-      <label for="validationCustom01" class="form-label">First name</label>
-      <input type="text" ngModel class="form-control" id="validationCustom01" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationCustom02" class="form-label">Last name</label>
-      <input type="text" ngModel class="form-control" id="validationCustom02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4">
-      <label for="validationCustomUsername" class="form-label">Username</label>
-      <div class="input-group has-validation">
-        <span class="input-group-text" id="inputGroupPrepend">@</span>
-        <input type="text" ngModel class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">
-          Please choose a username.
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <label for="validationCustom03" class="form-label">City</label>
-      <input type="text" ngModel class="form-control" id="validationCustom03" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom04" class="form-label">State</label>
-      <select class="form-select" id="validationCustom04" required>
-        <option selected disabled value="">Choose...</option>
-        <option value="1"></option>
-        <option value="2"></option>
-        <option value="3"></option>
-        <option value="4"></option>
-      </select>
-      <div class="invalid-feedback">
-        Please select a valid state.
-      </div>
-    </div>
-    <div class="col-md-3">
-      <label for="validationCustom05" class="form-label">Zip</label>
-      <input type="text" ngModel class="form-control" id="validationCustom05" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" ngModel type="checkbox" value="" id="invalidCheck" required>
-        <label class="form-check-label" for="invalidCheck">
-          Agree to terms and conditions
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-  </form>
+<div class="container" style=" background:url('assets/background.png'); filter: grayscale(100%); background-position:center;
+background-size: cover; background-repeat: no-repeat;">
+  <div class ="row">
+  <div class="col">
+    <div class='divv' >
+  <h1  style="text-align:center; color:white" ngOnChange>{{heading}}</h1> 
+  <input type="radio" name="login" id="" value="True">
+  <input type="radio" name="login" id="" value="False">
+  <h1 (change)='ngOnChanges()'> 123</h1>
+</div>
+    
+<p style="text-align:center; color:white">I'M A MULTI-PURPOSED DESIGNER WORKING ON INTERFACES AND BRANDING FOR DIGITAL PRODUCTION AWARDS.</p>
+<p style="text-align:center; color:white">WINNING INTERDISCIPLINARY DISIGNER & ART DIRECTOR BASED IN SUNNY NEW YORK</p>
+
+</div>
+</div>
+</div>
+
+<div class="container" style="margin-top: 50px; margin-bottom: 50px">
+  <div class="row">
+    
+  <div class="col-lg-6">
+    <img src="assets/background.png" alt="" style="border-radius: 50%;
+    width: 300px; height: 300px; display: block;
+margin: 0 auto; margin-bottom:20px;
+     ">
+
+  </div>
+  <div class="col-lg-6">
+   <H3> <strong>ALITTLE ABOUT ME</strong> </H3>
+   <h6><strong> am Creative Web Designer and Front_end Developer</strong></h6>
+   <p>I'm a multi-foused designer working an interfaces and branding for digital productions.</p>
+   <p>Awards winning interdisciplinary Designer & Art director.a team who specialise in coding websites and themes of style and function for a wide range of interactive</p>
+  <button>Download Resume</button>
+</div>
+
+<div class="container" style="margin-top: 10%;">
+<h3>About the product</h3>
+<br>
+<h6> <strong>portfolio HTML Template </strong> </h6>
+<hr>
+<p>It is designed for all devices, not only responsive, It is fully optimized for all display devices</p>
+<hr>
+<h4>Main Features</h4>
+<br>
+<ul>
+  <li>Fully Responsive</li>
+  <li>Bootstrap 3</li>
+  <li>HTML% & CSS3</li>
+  <li>Clean Design</li>
+  <li>Font Awesome Icons</li>
+  <li>Amazing Gallery</li>
+  <li>Easy to Customize</li>
+  <li>Well Documented Code</li>
+  <li>Support</li>
+</ul>
+<hr>
+<h6>Feel free to contact me if you have any problems with my template hope you like it and thanks for purchasing</h6>
+</div>
+</div>
+</div>
