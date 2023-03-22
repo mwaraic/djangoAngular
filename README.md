@@ -1,1 +1,1 @@
-# Django-Angular-Template
+# Django-Angular-Boilerplate
