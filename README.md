@@ -1,10 +1,10 @@
 # Django-Angular-Boilerplate
 
 ## Features:
-_ API Library
+- API Library
 - JWT Authentication through Angular RxJS <br/>
 - Django Custom User Model <br/>
-- Ability to Create, Retrieve and Delete Carts
+- Ability to Create, Retrieve and Delete Shopping Items
 
 ## Repos used:
 - https://github.com/bezkoder/angular-8-jwt-authentication
